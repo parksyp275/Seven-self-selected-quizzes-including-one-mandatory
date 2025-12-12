@@ -53,3 +53,7 @@ def get_student_plants(diagram: str, student_name: str, students: list[str] = No
     # 힌트: 문자열 슬라이싱 [start:end]을 사용하세요
     # 힌트: 첫 번째 줄의 2개 + 두 번째 줄의 2개를 순서대로 가져와야 합니다
     codes = rows[0][start_index:end_index] + rows[1][start_index:end_index]
+
+    # TODO 6: 추출한 코드를 식물 이름으로 변환하여 리스트로 반환하세요
+    # 힌트: 리스트 컴프리헨션과 위에서 만든 딕셔너리를 사용하면 편해요
+    return [plant_codes[code] for code in codes]
